@@ -6,6 +6,8 @@ from flask_heroku import Heroku
 import os
 
 app = Flask(__name__)
+CORS(app)
+heroku = Heroku(app)
 
 
 basedir = os.path.abspath(os.path.dirname(__file__))
